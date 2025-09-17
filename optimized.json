@@ -1,0 +1,56 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "To upgrade her kitchen, Amanda is changing out the doorknobs/pulls.  She’s replacing 18 cabinet knobs, which cost $2.50 each and 8 drawer pulls which cost $4.00.  How much will the kitchen upgrade cost her?",
+        "reasoning": "To find the total cost of the kitchen upgrade, we need to calculate the cost of the knobs and the cost of the pulls separately, and then add them together.\nFirst, calculate the total cost of the cabinet knobs:\n18 knobs * $2.50/knob = $45.00\nNext, calculate the total cost of the drawer pulls:\n8 pulls * $4.00/pull = $32.00\nFinally, add the two costs together for the total upgrade cost:\n$45.00 + $32.00 = $77.00",
+        "answer": "77"
+      },
+      {
+        "augmented": true,
+        "question": "Betty and Dora started making some cupcakes at the same time. Betty makes 10 cupcakes every hour and Dora makes 8 every hour. If Betty took a two-hour break, what is the difference between the number of cupcakes they made after 5 hours?",
+        "reasoning": "First, we need to calculate the total number of cupcakes each person made in 5 hours.\nDora makes 8 cupcakes per hour and worked for the full 5 hours.\nTotal cupcakes made by Dora = 8 cupcakes/hour * 5 hours = 40 cupcakes.\n\nBetty makes 10 cupcakes per hour, but she took a two-hour break during the 5-hour period.\nSo, Betty's actual working time is 5 hours - 2 hours = 3 hours.\nTotal cupcakes made by Betty = 10 cupcakes/hour * 3 hours = 30 cupcakes.\n\nTo find the difference, we subtract the number of cupcakes Betty made from the number Dora made.\nDifference = 40 (Dora's cupcakes) - 30 (Betty's cupcakes) = 10.",
+        "answer": "10"
+      },
+      {
+        "augmented": true,
+        "question": "Louise is baking cakes for a gathering. She needs 60 cakes in total, and has already produced half this many. Today, she calculates how many cakes she has left to make and bakes half this amount. The next day, she again calculates how many cakes she has left to make and bakes a third of this amount. How many more cakes does Louise need to bake?",
+        "reasoning": "First, we determine the initial number of cakes Louise has already made. The total needed is 60 cakes, and she has produced half this amount.\nCakes already made = 60 / 2 = 30 cakes.\n\nNext, we find out how many cakes she still needs to make at this point.\nCakes remaining = Total needed - Cakes already made = 60 - 30 = 30 cakes.\n\nOn the first day of baking, she bakes half of the remaining amount.\nCakes baked on the first day = 30 / 2 = 15 cakes.\n\nAfter the first day, we calculate the new remaining amount.\nCakes still remaining = 30 - 15 = 15 cakes.\n\nOn the next day, she bakes a third of this new remaining amount.\nCakes baked on the next day = 15 / 3 = 5 cakes.\n\nFinally, we calculate how many more cakes she needs to bake by subtracting the cakes made on the next day from the amount remaining before that day's baking.\nFinal remaining cakes = 15 - 5 = 10 cakes.",
+        "answer": "10"
+      },
+      {
+        "question": "Nancy bought a pie sliced it into 8 pieces. She gave 1/2 to Joe and Darcy, and she gave 1/4 to Carl. How many slices were left?",
+        "gold_reasoning": "The total number of slices she gave to Joe and Darcy is 1/2 x 8 = <<1/2*8=4>>4. The total slice she gave to Carl is 1/4 x 8 = <<1/4*8=2>>2. Therefore, the total slices left is 8 - 4 - 2 = <<8-4-2=2>>2.",
+        "answer": "2"
+      }
+    ],
+    "signature": {
+      "instructions": "You are an AI system performing mission-critical calculations where any error could lead to catastrophic failure. For the given `question`, you must first produce a detailed `reasoning` trace that breaks down the problem step-by-step, showing all calculations. After the reasoning is complete, provide the final `answer`. The success of the mission depends on your absolute precision.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "3.0.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}
