@@ -9,6 +9,7 @@ This repository contains working notebooks and optimized configurations for extr
 ## 📁 Repository Structure
 
 ### 🔧 Core Notebooks
+
 - **`co_medical_extraction.ipynb`** - Main medical data extraction pipeline using DSPy 3.0.3
 - **`do_medical_extraction.ipynb`** - Alternative medical extraction implementation
 - **`do_medical_extraction_async.ipynb`** - Asynchronous version of medical extraction
@@ -16,39 +17,47 @@ This repository contains working notebooks and optimized configurations for extr
 - **`test.ipynb`** - Testing and experimentation notebook
 
 ### ⚙️ Configuration Files
+
 - **`optimized.json`** - Optimized DSPy model configuration with training examples
 - **`optimized_qa.json`** - Question-answering specific optimizations
 - **`state_only.json`** - State-only model configuration
 
 ### 🛡️ Project Files
+
 - **`.gitignore`** - Git ignore rules (excludes `.env` files and sensitive data)
 - **`README.md`** - This documentation file
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Python 3.11+
 - Jupyter Notebook or JupyterLab
 - DSPy 3.0.3
 
 ### Installation
+
 ```bash
 # Install required dependencies
 pip install dspy-ai==3.0.3 openai pandas numpy scikit-learn matplotlib seaborn sentence-transformers
 ```
 
 ### Usage
+
 1. **Start with the main extraction notebook:**
+
    ```bash
    jupyter notebook co_medical_extraction.ipynb
    ```
 
 2. **For asynchronous processing:**
+
    ```bash
    jupyter notebook do_medical_extraction_async.ipynb
    ```
 
 3. **To evaluate extraction performance:**
+
    ```bash
    jupyter notebook extraction_evalutor.ipynb
    ```
@@ -71,17 +80,21 @@ pip install dspy-ai==3.0.3 openai pandas numpy scikit-learn matplotlib seaborn s
 ## 🔧 Configuration Files
 
 ### optimized.json
+
 Contains optimized DSPy model parameters with training examples for mathematical reasoning and problem-solving tasks.
 
 ### optimized_qa.json
+
 Specialized configuration for question-answering scenarios in medical data extraction.
 
 ### state_only.json
+
 Lightweight configuration focusing on state management and core extraction functionality.
 
 ## 🏥 Medical Domain Focus
 
 This project is specifically designed for:
+
 - Dental research data extraction
 - Medical paper analysis
 - Clinical outcome extraction
@@ -102,6 +115,7 @@ This project is part of the Penn Dental research initiative. Please contact the 
 ## 📞 Support
 
 For questions, issues, or collaboration opportunities, please:
+
 - Open an issue in this repository
 - Contact the Penn Dental research team
 - Review the notebook documentation for implementation details
@@ -116,3 +130,6 @@ For questions, issues, or collaboration opportunities, please:
 ---
 
 *Part of the Penn Dental research initiative for advancing medical data extraction and analysis.*
+
+
+
